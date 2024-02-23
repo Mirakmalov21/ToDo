@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>To Do</title>
+  </head>
+  <body>
+    <div id="main">
+      <form>
+        <div class="col-md-6 offset-3 mb-3 mt-5">
+          <label for="textarea" class="form-label">Enter activity</label>
+          <textarea
+            class="form-control"
+            id="textarea"
+            placeholder="Enter activity"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="col-md-6 offset-3 mb-3 d-flex justify-content-end">
+          <button id="submit" class="btn btn-primary" type="button">
+            Submit
+          </button>
+        </div>
+      </form>
+      <div class="col-md-6 offset-3 mb-3">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Task</th>
+              <th scope="col">Options</th>
+            </tr>
+          </thead>
+          <tbody id="activities"></tbody>
+        </table>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Task</th>
+              <th scope="col">Options</th>
+            </tr>
+          </thead>
+          <tbody id="completed"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <form>
+      <div class="modalInput hidden">
+        <div class="col-md-6 offset-3 mb-3">
+          <label for="editTask" style="color: #000">Edit Activity</label>
+          <textarea
+            id="editTask"
+            class="form-control"
+            rows="3"
+            placeholder="Edit activity"
+          ></textarea>
+          <div
+            class="col-md-6 offset-3 mb-3 d-flex justify-content-center mt-3"
+          >
+            <button id="editSubmit" class="btn btn-primary" type="button">
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
